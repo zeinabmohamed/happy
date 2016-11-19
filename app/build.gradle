@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+
+    defaultConfig {
+        applicationId 'com.gamila.zm.ThridPartiesLibsDemo'
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        resValue "string", "google_maps_api_key", properties.getProperty("MAP_KEY")
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    /**
+     * support library
+     */
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    /**
+     * facebook sdk
+     */
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    /**
+     * retrofit library
+     */
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    /**
+     * recyclerview
+     */
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    /**
+     * google play services
+     */
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
+    compile 'com.google.android.gms:play-services-location:9.8.0'
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
+}
+apply plugin: 'com.google.gms.google-services'

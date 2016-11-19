@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Happy<!--ThirdPartiesLibsDemo--></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="server_connection_error">Could not be reached for server try again later</string>
+    <string name="loading" >Loading...</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_internt_connection">No Internet Connection</string>
+    <string name="distance">%f KM</string>
+    <string name="title_activity_locationmap">LocationMapActivity</string>
+    <string name="locations">Locations</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="login_hint" ><![CDATA[<b>Hint</b>    \n <b>Username : </b>admin \n <b>Password : </b>123456]]> </string>
+    <string name="username_error">Please enter valid username</string>
+    <string name="password_error">Please enter valid password</string>
+    <string name="welcome_username">Welcome %s !!</string>
+</resources>

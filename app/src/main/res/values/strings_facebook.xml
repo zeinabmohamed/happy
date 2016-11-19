@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--if your App ID is 1234567, you should use fb1234567-->
+
+    <string name="fb_login_protocol_scheme">fb1651004238526102</string>
+    <string name="facebook_app_id">1651004238526102</string>
+
+</resources>
